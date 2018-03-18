@@ -10,5 +10,5 @@ RUN dnf -y install python3-pip firefox && \
     rm -r -f /var/lib/yum
 RUN pip3 install --upgrade pip
 RUN pip3 install selenium
-#xorg-x11-server-Xvfb
+RUN pip3 install xlrd
 COPY --from=0 /work/geckodriver /usr/local/bin/geckodriver
